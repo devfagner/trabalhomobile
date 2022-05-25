@@ -14,7 +14,7 @@ export default function App() {
             texto = "O numero é par"
 
         }
-        alert(texto);
+        alert();
     }
 
 

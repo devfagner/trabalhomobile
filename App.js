@@ -27,23 +27,23 @@ export default function App() {
 
                 <TextInput style={styles.input}
                     placeholder='Nome Completo'
-                    onChangeText={text => setText(text)}
+                    onChangeText={text => setText1(text)}
                     defaultValue={text}
                 />
                 <TextInput style={styles.input}
                     placeholder='Data de Nascimento'
-                    onChangeText={text => setText(text)}
+                    onChangeText={text => setText2(text)}
                     defaultValue={text}
                 />
 
                 <TextInput style={styles.input}
                     placeholder='Email'
-                    onChangeText={text => setText(text)}
+                    onChangeText={text => setText3(text)}
                     defaultValue={text}
                 />
                 <TextInput style={styles.input}
                     placeholder='Senha'
-                    onChangeText={text => setText(text)}
+                    onChangeText={text => setText4(text)}
                     defaultValue={text}
                 />
 

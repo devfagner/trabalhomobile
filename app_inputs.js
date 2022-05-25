@@ -292,7 +292,7 @@ function Title(){
     marginLeft: 708,
 },
 
-  input3:{
+  input3: {
     width: "2%",
     backgroundColor: "#ffffff",
     height: 16,

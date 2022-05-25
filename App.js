@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, ScrollView } from 'react-native';
 
@@ -20,7 +19,7 @@ export default function App() {
 
 
     return (
-        //<ScrollView style={styles.container}>
+        <ScrollView style={styles.scroll}>
             <View style={styles.container}>
                 <Image source={{ uri: "https://seeklogo.com/images/S/soccer-bets-logo-E899551478-seeklogo.com.png" }} style={{ width: ' 100%', height: ' 45%' }} />
 
@@ -36,7 +35,7 @@ export default function App() {
                     onChangeText={text => setText(text)}
                     defaultValue={text}
                 />
-                
+
                 <TextInput style={styles.input}
                     placeholder='Email'
                     onChangeText={text => setText(text)}
@@ -52,11 +51,12 @@ export default function App() {
                     <Text style={styles.textButtonCalculator}>Cadastrar</Text>
                 </TouchableOpacity>
 
-                <StatusBar style="auto" />
+
             </View>
-        //</ScrollView>
+        </ScrollView>
     );
 }
+
 
 
 
@@ -65,11 +65,9 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#DCDCDC',
         alignItems: 'center',
-       
-        
     },
+    
     button: {
-
         borderRadius: 50,
         alignItems: "center",
         justifyContent: "center",
@@ -108,7 +106,4 @@ const styles = StyleSheet.create({
     textButtonCcadastro: {
         color: 'black'
     },
-
-
-
 });

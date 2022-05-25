@@ -5,11 +5,11 @@ import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image  } f
 
 
 export default function App() {
-  const [text, setText] = useState("");
-  function onPressButton(){
+   const [text, setText] = useState("");
+   function onPressButton(){
     let num = parseInt(text);
     let texto = "O numero é impar"
-    if(num%2 ==0){
+     if(num%2 ==0){
       texto = "O numero é par"
 
     }

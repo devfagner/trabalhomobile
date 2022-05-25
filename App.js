@@ -19,9 +19,9 @@ export default function App() {
 
 
     return (
-        <ScrollView style={styles.scroll}>
+        
             <View style={styles.container}>
-                <Image source={{ uri: "https://seeklogo.com/images/S/soccer-bets-logo-E899551478-seeklogo.com.png" }} style={{ width: ' 100%', height: ' 45%' }} />
+                <Image source={{ uri: "https://seeklogo.com/images/S/soccer-bets-logo-E899551478-seeklogo.com.png" }} style={{ width: ' 100%', height: ' 47%' }} />
 
                 <Text style={styles.titulo}> Soccer bets</Text>
 
@@ -50,10 +50,12 @@ export default function App() {
                 <TouchableOpacity style={styles.button} onPress={() => onPressButton()}>
                     <Text style={styles.textButtonCalculator}>Cadastrar</Text>
                 </TouchableOpacity>
+               
+
 
 
             </View>
-        </ScrollView>
+        
     );
 }
 
@@ -63,7 +65,7 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#DCDCDC',
+        backgroundColor: '#0000CD',
         alignItems: 'center',
     },
     
@@ -72,9 +74,9 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         width: "40%",
-        backgroundColor: "#00008B",
-        paddingTop: 14,
-        paddingBottom: 14,
+        backgroundColor: "#00FFFF",
+        paddingTop: 5,
+        paddingBottom: 5,
         marginLeft: 12,
         marginTop: 30,
 
@@ -85,8 +87,8 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         width: "70%",
         backgroundColor: "white",
-        paddingTop: 14,
-        paddingBottom: 14,
+        paddingTop: 5,
+        paddingBottom: 5,
         marginLeft: 12,
         marginTop: 30,
         textAlign: "center",
@@ -100,8 +102,9 @@ const styles = StyleSheet.create({
         marginLeft: 220,
         marginTop: 40,
     },
+    
     textButtonCalculator: {
-        color: 'white'
+        color: 'black'
     },
     textButtonCcadastro: {
         color: 'black'

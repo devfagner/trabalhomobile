@@ -107,7 +107,7 @@ function validar_aposta(){
     <View style={styles.formContext}>
       <View style={styles.form}>
 
-        <Text style={styles.formLabel}>  AMÉRICA-MG              X              AVAÍ-SC</Text>
+        <Text style={styles.formLabel}>       AMÉRICA-MG              X              AVAÍ-SC</Text>
         <TextInput style={styles.input1}
           onChangeText={setCampo1}
           value={Campo1}
@@ -119,7 +119,7 @@ function validar_aposta(){
           keyboardType="numeric"
         />
        
-        <Text style={styles.formLabel}>          FLAMENGO-RJ              X               ATLÉTICO-GO</Text>
+        <Text style={styles.formLabel}>               FLAMENGO-RJ              X               ATLÉTICO-GO</Text>
         <TextInput style={styles.input3}
           onChangeText={setCampo3}
           value={Campo3}
@@ -131,7 +131,7 @@ function validar_aposta(){
           keyboardType="numeric"
         />
 
-        <Text style={styles.formLabel}>        BRAGANTINO-SP              X              JUVENTUDE-RS</Text>
+        <Text style={styles.formLabel}>             BRAGANTINO-SP              X              JUVENTUDE-RS</Text>
         <TextInput style={styles.input5}
           onChangeText={setCampo5}
           value={Campo5}
@@ -143,7 +143,7 @@ function validar_aposta(){
           keyboardType="numeric"
         />
 
-        <Text style={styles.formLabel}>      CORINTHIANS-SP              X              BOTAFOGO-RJ</Text>
+        <Text style={styles.formLabel}>           CORINTHIANS-SP              X              BOTAFOGO-RJ</Text>
         <TextInput style={styles.input7}
           onChangeText={setCampo7}
           value={Campo7}
@@ -155,7 +155,7 @@ function validar_aposta(){
           keyboardType="numeric"
         />
 
-        <Text style={styles.formLabel}>                    SANTOS-SP              X              FLUMINENSE-RJ</Text>
+        <Text style={styles.formLabel}>                         SANTOS-SP              X              FLUMINENSE-RJ</Text>
         <TextInput style={styles.input9}
           onChangeText={setCampo9}
           value={Campo9}
@@ -167,7 +167,7 @@ function validar_aposta(){
           keyboardType="numeric"
         />
 
-        <Text style={styles.formLabel}>INTERNACIONAL-RS              X              ATLÉTICO-MG</Text>
+        <Text style={styles.formLabel}>     INTERNACIONAL-RS              X              ATLÉTICO-MG</Text>
         <TextInput style={styles.input11}
           onChangeText={setCampo11}
           value={Campo11}
@@ -179,7 +179,7 @@ function validar_aposta(){
           keyboardType="numeric"
         />
 
-        <Text style={styles.formLabel}>                    CEARÁ-CE              X              PALMEIRAS-SP</Text>
+        <Text style={styles.formLabel}>                         CEARÁ-CE              X              PALMEIRAS-SP</Text>
         <TextInput style={styles.input13}
           onChangeText={setCampo13}
           value={Campo13}
@@ -191,7 +191,7 @@ function validar_aposta(){
           keyboardType="numeric"
         />
 
-        <Text style={styles.formLabel}>                GOIÁS-GO              X              CORITIBA-PR</Text>
+        <Text style={styles.formLabel}>                     GOIÁS-GO              X              CORITIBA-PR</Text>
         <TextInput style={styles.input15}
           onChangeText={setCampo15}
           value={Campo15}
@@ -203,7 +203,7 @@ function validar_aposta(){
           keyboardType="numeric"
         />
 
-        <Text style={styles.formLabel}>                 CUIABÁ-MT              X              FORTALEZA-CE</Text>
+        <Text style={styles.formLabel}>                      CUIABÁ-MT              X              FORTALEZA-CE</Text>
         <TextInput style={styles.input17}
           onChangeText={setCampo17}
           value={Campo17}
@@ -215,7 +215,7 @@ function validar_aposta(){
           keyboardType="numeric"
         />
 
-        <Text style={styles.formLabel}>            ATHLETICO-PR              X              SÃO PAULO-SP</Text>
+        <Text style={styles.formLabel}>                 ATHLETICO-PR              X              SÃO PAULO-SP</Text>
         <TextInput style={styles.input19}
           onChangeText={setCampo19}
           value={Campo19}
@@ -248,7 +248,7 @@ function Title(){
 
   container:{
     backgroundColor: "orangered",
-    paddingTop: 74,
+    marginTop: 22,
 },
  
   formContext:{
@@ -264,6 +264,7 @@ function Title(){
     height: "100%",
     marginTop: -6,
     padding: 10,
+    backgroundColor: "black",
 },
   
   formLabel:{
@@ -271,7 +272,7 @@ function Title(){
     fontSize: 12,
     fontWeight: "bold",
     textAlign: 'center',
-    marginTop: 24,
+    marginTop: 30,
 },
  
   input1:{
@@ -292,7 +293,7 @@ function Title(){
     marginLeft: 708,
 },
 
-  input3: {
+  input3:{
     width: "2%",
     backgroundColor: "#ffffff",
     height: 16,
@@ -476,7 +477,7 @@ function Title(){
   boxTitle:{
     alignItems: "center",
     justifyContent: "center",
-    marginTop: -80,
+  
 },
 
   textTitle:{

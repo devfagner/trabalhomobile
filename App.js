@@ -43,7 +43,7 @@ export default function App() {
                 />
                 <TextInput style={styles.input}
                     placeholder='Senha'
-                    onChangeText={text => setText4(text)}
+                    onChangeText={text =>  setText4(text)}
                     defaultValue={text}
                 />
 

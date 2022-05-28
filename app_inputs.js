@@ -236,7 +236,7 @@ function validar_aposta(){
   );
 }
 
-function Title(){
+function  Title(){
   return (
     <View style={styles.boxTitle}>
       <Text  style={styles.textTitle}>20ª RODADA</Text>

@@ -6,56 +6,61 @@ import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, Scr
 
 
 export default function App() {
-    const [text, setText] = useState("");
+    const [text1, setText1] = useState("");
+    const [text2, setText2] = useState("");
+    const [text3, setText3] = useState("");
+    const [text4, setText4] = useState("");
+ 
     function onPressButton() {
-        let num = parseInt(text);
-        let texto = "O numero é impar"
-        if (num % 2 == 0) {
-            texto = "O numero é par"
+       
+       
 
-        }
+        
         alert();
     }
 
 
     return (
-        
-            <View style={styles.container}>
-                <Image source={{ uri: "https://seeklogo.com/images/S/soccer-bets-logo-E899551478-seeklogo.com.png" }} style={{ width: ' 100%', height: ' 47%' }} />
+
+        <View style={styles.container}>
+            <ScrollView style={styles.scrollView}>
+
+                <Image style={styles.image} source={{ uri: "https://seeklogo.com/images/S/soccer-bets-logo-E899551478-seeklogo.com.png" }}  />
 
                 <Text style={styles.titulo}> Soccer bets</Text>
 
                 <TextInput style={styles.input}
                     placeholder='Nome Completo'
-                    onChangeText={text => setText1(text)}
-                    defaultValue={text}
+                    onChangeText={text1 => setText1(text1)}
+                    defaultValue={text1}
                 />
                 <TextInput style={styles.input}
                     placeholder='Data de Nascimento'
-                    onChangeText={text => setText2(text)}
-                    defaultValue={text}
+                    onChangeText={text2 => setText2(text2)}
+                    defaultValue={text2}
                 />
 
                 <TextInput style={styles.input}
                     placeholder='Email'
-                    onChangeText={text => setText3(text)}
-                    defaultValue={text}
+                    onChangeText={text3 => setText3(text3)}
+                    defaultValue={text3}
                 />
                 <TextInput style={styles.input}
                     placeholder='Senha'
-                    onChangeText={text =>  setText4(text)}
-                    defaultValue={text}
+                    onChangeText={text4 => setText4(text4)}
+                    defaultValue={text4}
                 />
 
                 <TouchableOpacity style={styles.button} onPress={() => onPressButton()}>
                     <Text style={styles.textButtonCalculator}>Cadastrar</Text>
                 </TouchableOpacity>
-               
 
 
 
-            </View>
-        
+            </ScrollView >
+        </View>
+
+
     );
 }
 
@@ -68,16 +73,28 @@ const styles = StyleSheet.create({
         backgroundColor: '#0000CD',
         alignItems: 'center',
     },
-    
+
+    scrollView: {
+        backgroundColor: '#0000CD',
+        marginHorizontal: 100,
+        marginTop: 40,
+        width: '100%',
+       
+      },
+
+      text: {
+        fontSize: 50,
+      },
+
     button: {
         borderRadius: 50,
         alignItems: "center",
         justifyContent: "center",
-        width: "40%",
+        width: "50%",
         backgroundColor: "#00FFFF",
         paddingTop: 5,
         paddingBottom: 5,
-        marginLeft: 12,
+        marginLeft: 102,
         marginTop: 30,
 
     },
@@ -85,28 +102,36 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         alignItems: "center",
         justifyContent: "center",
-        width: "70%",
+        width: "90%",
         backgroundColor: "white",
-        paddingTop: 5,
+        paddingTop: 20,
         paddingBottom: 5,
         marginLeft: 12,
-        marginTop: 30,
+        marginTop: 50,
         textAlign: "center",
+       
     },
     titulo: {
         color: "orange",
         marginTop: 30,
         fontSize: 40,
+        marginLeft: 100,
     },
     buttoncadastro: {
         marginLeft: 220,
         marginTop: 40,
     },
-    
+
     textButtonCalculator: {
         color: 'black'
     },
     textButtonCcadastro: {
         color: 'black'
     },
-});
+
+    image: {
+        width: 250,
+        height: 250,
+        marginLeft: 80,
+    },
+})

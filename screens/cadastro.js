@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, ScrollView } from 'react-native';
+import { useState } from 'react';
+import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, ScrollView } from 'react-native';
 
 
 
 
 
-export default function App() {
+export default function cadastro() {
     const [text1, setText1] = useState("");
     const [text2, setText2] = useState("");
     const [text3, setText3] = useState("");
@@ -96,6 +98,7 @@ const styles = StyleSheet.create({
         paddingBottom: 5,
         marginLeft: 102,
         marginTop: 30,
+        
 
     },
     input: {

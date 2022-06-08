@@ -1,8 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
 import React, { useState } from "react";
+import { useState } from 'react';
+import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, ScrollView } from 'react-native';
 
-export default function App() {
+export default function inputs() {
   return (
     <View style={styles.container}>
       <Title/>

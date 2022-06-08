@@ -1,20 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image  } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, ScrollView } from 'react-native';
 
 
-
-export default function App() {
-   const [text, setText] = useState("");
-   function onPressButton(){
-    let num = parseInt(text);
-    let texto = "O numero é impar"
-     if(num%2 ==0){
-      texto = "O numero é par"
-
-    }
-    alert();
-  }
+export default function login() {
+   
+  
   return (
     <View style={styles.container}>
       <Image source={{ uri: "https://seeklogo.com/images/S/soccer-bets-logo-E899551478-seeklogo.com.png" }} style={{ width: "100%", height: "45%" }} />

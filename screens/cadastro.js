@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, ScrollView } from 'react-native';
-import { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, ScrollView } from 'react-native';
+
+
 
 
 
@@ -13,13 +13,7 @@ export default function cadastro() {
     const [text3, setText3] = useState("");
     const [text4, setText4] = useState("");
  
-    function onPressButton() {
-       
-       
-
-        
-        alert();
-    }
+    function cadastrar() {}
 
 
     return (
@@ -53,7 +47,7 @@ export default function cadastro() {
                     defaultValue={text4}
                 />
 
-                <TouchableOpacity style={styles.button} onPress={() => onPressButton()}>
+                <TouchableOpacity style={styles.button} onPress={() => cadastrar()}>
                     <Text style={styles.textButtonCalculator}>Cadastrar</Text>
                 </TouchableOpacity>
 
@@ -121,7 +115,7 @@ const styles = StyleSheet.create({
         marginLeft: 100,
     },
     buttoncadastro: {
-        marginLeft: 220,
+        marginLeft: 300,
         marginTop: 40,
     },
 

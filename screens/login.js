@@ -1,25 +1,27 @@
-import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image  } from 'react-native';
+import { useState } from 'react'; 
 import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, ScrollView } from 'react-native';
 
 
 export default function login() {
-   
+  const [text1, setText1] = useState("");
+  const [text2, setText2] = useState("");
   
   return (
     <View style={styles.container}>
-      <Image source={{ uri: "https://seeklogo.com/images/S/soccer-bets-logo-E899551478-seeklogo.com.png" }} style={{ width: "100%", height: "45%" }} />
+     <ScrollView style={styles.scrollView}>
+      <Image style={styles.image} source={{ uri: "https://seeklogo.com/images/S/soccer-bets-logo-E899551478-seeklogo.com.png" }}  />
       
       <Text style={styles.titulo}> Soccer bets</Text>
      
         <TextInput style={styles.input}
           placeholder='Usuário'
-          onChangeText={text => setText(text)}
-          defaultValue={text}
+          onChangeText={text1 => setText1(text1)}
+          defaultValue={text1}
         />
         <TextInput style={styles.input}
           placeholder='Senha'
-          onChangeText={text => setText(text)}
-          defaultValue={text}
+          onChangeText={text2 => setText2(text2)}
+          defaultValue={text2}
         />
       
      <TouchableOpacity style={styles.button} onPress={() => onPressButton()}>
@@ -32,7 +34,7 @@ export default function login() {
       
      
       
-      
+     </ScrollView>
     </View>
   );
 }
@@ -84,7 +86,14 @@ const styles = StyleSheet.create({
   },
   textButtoncadastro:{
     color: "black"
-  }
-
+  },
+  image: {
+    width: 400,
+    height: 400,
+    marginLeft: 0,
+},
+scrollView:{
+  textAlign: 'center',
+}
   
 });

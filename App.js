@@ -7,11 +7,11 @@ import cadastro from './screens/cadastro';
 
 const Stack = createNativeStackNavigator();
 
-export default function MyStack() {
+export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="tela de login" component={login} />
+        <Stack.Screen name="Login" component={login} />
         <Stack.Screen name="tela das apostas" component={inputs} />
         <Stack.Screen name="tela de cadastro" component={cadastro} />
       </Stack.Navigator>

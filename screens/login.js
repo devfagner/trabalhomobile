@@ -4,17 +4,18 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import cadastro from '../screens/cadastro';
+import inputs from './inputs';
 
 //function HomeScreen({ navigation }) {
  // return (
-    //<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-     // <Text>Home Screen</Text>
-     // <Button
-       // title="cadastro"
-      //  onPress={() => navigation.navigate('cadastro')}
-     // />
+   // <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+   //   <Text>Home Screen</Text>
+    //</View>/  <Button
+     //   title="cadastro"
+     //   onPress={() => navigation.navigate('cadastro')}
+    //  />
    // </View>
- /// );
+  //);
 //}
 
 const Stack = createNativeStackNavigator();
@@ -34,6 +35,16 @@ function navegar() {
 export default function login() {
   const [text1, setText1] = useState("");
   const [text2, setText2] = useState("");
+  
+  function login() {
+    return (
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="inputs">
+          <Stack.Screen name="inputs" component={inputs} />
+         </Stack.Navigator>
+      </NavigationContainer>
+    );
+  }
   
   return (
     <View style={styles.container}>
@@ -58,7 +69,7 @@ export default function login() {
      </TouchableOpacity>
      
      <TouchableOpacity style={styles.buttoncadastro} onPressButton={() => navegar()}>
-     <Text style={styles.textButtoncadastro}>Criar cadastro</Text>
+     <Text style={styles.textButtoncadastro}> Criar novo cadastro</Text>
      </TouchableOpacity>
      
      
@@ -85,7 +96,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#00008B",
     paddingTop: 14,
     paddingBottom: 14,
-    marginLeft: 12,
+    marginLeft: 120,
     marginTop: 30,
     
   },
@@ -97,7 +108,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     paddingTop: 14,
     paddingBottom: 14,
-    marginLeft: 12,
+    marginLeft: 50,
     marginTop: 30,
     textAlign: "center",
   },
@@ -105,6 +116,7 @@ const styles = StyleSheet.create({
     color: "orange",
     marginTop: 30,
     fontSize: 40,
+    marginLeft: 70,
   },
   buttoncadastro:{
     marginTop: 30,
@@ -114,7 +126,11 @@ const styles = StyleSheet.create({
     color: "white"
   },
   textButtoncadastro:{
-    color: "black"
+    color: "white",
+    backgroundColor: "#00008B",
+    borderRadius: 20,
+    width: '80%',
+    
   },
   image: {
     width: 400,

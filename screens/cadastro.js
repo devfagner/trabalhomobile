@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, ScrollView } from 'react-native';
-
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import login from './login';
 
 
 
@@ -13,7 +15,17 @@ export default function cadastro() {
     const [text3, setText3] = useState("");
     const [text4, setText4] = useState("");
  
-    function cadastrar() {}
+    const Stack = createNativeStackNavigator();
+
+    function navegar() {
+      return (
+        <NavigationContainer>
+          <Stack.Navigator initialRouteName="login">
+            <Stack.Screen name="login" component={login} />
+           </Stack.Navigator>
+        </NavigationContainer>
+      );
+    }
 
 
     return (
@@ -47,7 +59,7 @@ export default function cadastro() {
                     defaultValue={text4}
                 />
 
-                <TouchableOpacity style={styles.button} onPress={() => cadastrar()}>
+                <TouchableOpacity style={styles.button} onPress={() => login()}>
                     <Text style={styles.textButtonCalculator}>Cadastrar</Text>
                 </TouchableOpacity>
 

@@ -9,6 +9,8 @@ import login from './login';
 
 
 
+
+
 export default function cadastro() {
     const [text1, setText1] = useState("");
     const [text2, setText2] = useState("");
@@ -17,7 +19,7 @@ export default function cadastro() {
  
     const Stack = createNativeStackNavigator();
 
-    function navegar() {
+    function criarcadastro() {
       return (
         <NavigationContainer>
           <Stack.Navigator initialRouteName="login">
@@ -59,7 +61,7 @@ export default function cadastro() {
                     defaultValue={text4}
                 />
 
-                <TouchableOpacity style={styles.button} onPress={() => navegar()}>
+                <TouchableOpacity style={styles.button} onPress={() => criarcadastro()}>
                     <Text style={styles.textButtonCalculator}>Cadastrar</Text>
                 </TouchableOpacity>
 

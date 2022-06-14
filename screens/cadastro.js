@@ -59,7 +59,7 @@ export default function cadastro() {
                     defaultValue={text4}
                 />
 
-                <TouchableOpacity style={styles.button} onPress={() => login()}>
+                <TouchableOpacity style={styles.button} onPress={() => navegar()}>
                     <Text style={styles.textButtonCalculator}>Cadastrar</Text>
                 </TouchableOpacity>
 

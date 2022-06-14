@@ -64,7 +64,7 @@ export default function login() {
           defaultValue={text2}
         />
       
-     <TouchableOpacity style={styles.button} onPress={() => onPressButton()}>
+     <TouchableOpacity style={styles.button} onPress={() => login()}>
      <Text style={styles.textButtonCalculator}>Entrar</Text>
      </TouchableOpacity>
      

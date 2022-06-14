@@ -1,5 +1,34 @@
 import { useState } from 'react'; 
 import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, ScrollView } from 'react-native';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import cadastro from '../screens/cadastro';
+
+//function HomeScreen({ navigation }) {
+ // return (
+    //<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+     // <Text>Home Screen</Text>
+     // <Button
+       // title="cadastro"
+      //  onPress={() => navigation.navigate('cadastro')}
+     // />
+   // </View>
+ /// );
+//}
+
+const Stack = createNativeStackNavigator();
+
+function navegar() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="cadastro">
+        <Stack.Screen name="cadastro" component={cadastro} />
+       </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
 
 
 export default function login() {
@@ -28,10 +57,10 @@ export default function login() {
      <Text style={styles.textButtonCalculator}>Entrar</Text>
      </TouchableOpacity>
      
-     <TouchableOpacity style={styles.buttoncadastro} onPress={() => onPressButton()}>
-     <Text style={styles.textButtoncadastro}>Cadastrar</Text>
+     <TouchableOpacity style={styles.buttoncadastro} onPressButton={() => navegar()}>
+     <Text style={styles.textButtoncadastro}>Criar cadastro</Text>
      </TouchableOpacity>
-      
+     
      
       
      </ScrollView>
@@ -78,8 +107,8 @@ const styles = StyleSheet.create({
     fontSize: 40,
   },
   buttoncadastro:{
-    marginTop: 40,
-    marginLeft: 220
+    marginTop: 30,
+    marginLeft: 230
   },
   textButtonCalculator:{
     color: "white"

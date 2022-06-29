@@ -6,45 +6,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import cadastro from '../screens/cadastro';
 import inputs from './inputs';
 
-//function HomeScreen({ navigation }) {
- // return (
-   // <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-   //   <Text>Home Screen</Text>
-    //</View>/  <Button
-     //   title="cadastro"
-     //   onPress={() => navigation.navigate('cadastro')}
-    //  />
-   // </View>
-  //);
-//}
-
-const Stack = createNativeStackNavigator();
-
-function navegar() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="cadastro">
-        <Stack.Screen name="cadastro" component={cadastro} />
-       </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
-
-
-
 export default function login() {
   const [text1, setText1] = useState("");
   const [text2, setText2] = useState("");
   
-  function login() {
-    return (
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName="inputs">
-          <Stack.Screen name="inputs" component={inputs} />
-         </Stack.Navigator>
-      </NavigationContainer>
-    );
-  }
+  
   
   return (
     <View style={styles.container}>

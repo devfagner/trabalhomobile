@@ -1,20 +1,14 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import login from './screens/login';
-import inputs from './screens/inputs';
-import cadastro from './screens/cadastro';
+import {createBottomTabNavigator,createAppContainer } from '@react-navigation/native';
 
 
-const Stack = createNativeStackNavigator();
+import Login from '../trabalhomobile/screens/login';
+import inputs from '../trabalhomobile/screens/inputs';
+import cadastro from '../trabalhomobile/screens/cadastro';
 
-export default function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Login" component={login} />
-        <Stack.Screen name="tela das apostas" component={inputs} />
-        <Stack.Screen name="tela de cadastro" component={cadastro} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
+const mainNavigation = createBottomTabNavigator({
+  Login,
+  inputs,
+  cadastro,
+});
+
+export default createAppContainer(mainNavigation);

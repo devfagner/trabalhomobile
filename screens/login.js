@@ -4,7 +4,7 @@ import * as React from 'react';
 
 
 
-export default function login() {
+export default function logar() {
   const [text1, setText1] = useState("");
   const [text2, setText2] = useState("");
   
@@ -28,7 +28,7 @@ export default function login() {
           defaultValue={text2}
         />
       
-     <TouchableOpacity style={styles.button} onPress={() => login()}>
+     <TouchableOpacity style={styles.button} onPress={() => logar()}>
      <Text style={styles.textButtonCalculator}>Entrar</Text>
      </TouchableOpacity>
      

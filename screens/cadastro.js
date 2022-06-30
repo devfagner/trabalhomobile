@@ -1,33 +1,15 @@
 import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Image, ScrollView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import login from './login';
 
 
-
-
-
-
-
-
-export default function cadastro() {
+function cadastro() {
     const [text1, setText1] = useState("");
     const [text2, setText2] = useState("");
     const [text3, setText3] = useState("");
     const [text4, setText4] = useState("");
- 
-    const Stack = createNativeStackNavigator();
 
-    function criarcadastro() {
-      return (
-        <NavigationContainer>
-          <Stack.Navigator initialRouteName="login">
-            <Stack.Screen name="login" component={login} />
-           </Stack.Navigator>
-        </NavigationContainer>
-      );
-    }
+
 
 
     return (
@@ -35,7 +17,7 @@ export default function cadastro() {
         <View style={styles.container}>
             <ScrollView style={styles.scrollView}>
 
-                <Image style={styles.image} source={{ uri: "https://seeklogo.com/images/S/soccer-bets-logo-E899551478-seeklogo.com.png" }}  />
+                <Image style={styles.image} source={{ uri: "https://seeklogo.com/images/S/soccer-bets-logo-E899551478-seeklogo.com.png" }} />
 
                 <Text style={styles.titulo}> Soccer bets</Text>
 
@@ -89,12 +71,12 @@ const styles = StyleSheet.create({
         marginHorizontal: 100,
         marginTop: 40,
         width: '100%',
-       
-      },
 
-      text: {
+    },
+
+    text: {
         fontSize: 50,
-      },
+    },
 
     button: {
         borderRadius: 50,
@@ -106,7 +88,7 @@ const styles = StyleSheet.create({
         paddingBottom: 5,
         marginLeft: 102,
         marginTop: 30,
-        
+
 
     },
     input: {
@@ -120,7 +102,7 @@ const styles = StyleSheet.create({
         marginLeft: 12,
         marginTop: 50,
         textAlign: "center",
-       
+
     },
     titulo: {
         color: "orange",

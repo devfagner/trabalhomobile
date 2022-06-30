@@ -3,15 +3,15 @@ import { Button, StyleSheet, View, Text, TextInput, TouchableOpacity } from 'rea
 import { useState } from 'react';
 
 
-export default function inputs() {
-  return (
-    <View style={styles.container}>
-      <Title/>
-      <Form/>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+ //function inputs() {
+ // return (
+   // <View style={styles.container}>
+      //<Title/>
+     // <Form/>
+     // <StatusBar style="auto" />
+   // </View>
+ // );
+//}
 
 function Form(){
   const [Campo1, setCampo1] = React.useState(null);

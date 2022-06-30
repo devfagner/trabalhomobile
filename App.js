@@ -1,9 +1,8 @@
-import {createBottomTabNavigator,createAppContainer } from '@react-navigation/native';
-
-
-import Login from '../trabalhomobile/screens/login';
-import inputs from '../trabalhomobile/screens/inputs';
-import cadastro from '../trabalhomobile/screens/cadastro';
+import {createAppContainer, mainNavigation } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Login from './screens/login';
+import inputs from './screens/inputs';
+import cadastro from './screens/cadastro';
 
 const mainNavigation = createBottomTabNavigator({
   Login,
@@ -11,4 +10,6 @@ const mainNavigation = createBottomTabNavigator({
   cadastro,
 });
 
-export default createAppContainer(mainNavigation);
+export default createAppContainer(mainNavigation)
+
+ 

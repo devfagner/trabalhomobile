@@ -17,11 +17,11 @@ export const style = StyleSheet.create({
     height: 200,
     alignItems: "center"
   },
-  scrollView:{
+  scrollView: {
     textAlign: 'center',
     width: 400
   },
-  input:{
+  input: {
     borderRadius: 50,
     alignItems: "center",
     justifyContent: "center",
@@ -33,27 +33,38 @@ export const style = StyleSheet.create({
     marginTop: 30,
     textAlign: "center",
   },
-  titulo:{
+  titulo: {
     marginLeft: 120,
-    color: "orange",
+    color: "#FF8C00",
     marginTop: 30,
     fontSize: 30
   },
-  textButtonCalculator:{
+  textButtonCalculator: {
+    paddingTop: 15,
     paddingBottom: 20,
-    marginTop:35,
+    marginTop: 30,
     marginLeft: 140,
-    backgroundColor: "orange",
+    backgroundColor: "#FF8C00",
     width: 150,
     borderRadius: 30,
-    color: 'black',
-    textAlign:'center',
+    color: 'white',
+    textAlign: 'center',
     fontSize: 20,
   },
-  novocadastro:{
-    marginLeft:70,
-    backgroundColor: 'black',
+  botaocadastro: {
+    width:110,
+    backgroundColor: "#FF8C00",
+    paddingTop: 5,
+    borderRadius: 20,
+    paddingBottom: 7,
+    marginLeft: 200,
+  },
+  textobotaocadastrar: {
+    color: 'white',
+    fontSize:15,
+    marginLeft:7,
   }
+
 });
 
 export default style;

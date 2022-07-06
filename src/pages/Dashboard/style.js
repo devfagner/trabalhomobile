@@ -2,9 +2,10 @@ import { StyleSheet } from 'react-native';
 
 export const style = StyleSheet.create({
   container: {
+    height: '100%',
     padding: 15,
     flex: 1,
-    backgroundColor: '#DCDCDC',
+    backgroundColor: "#019934",
     alignItems: 'center',
     justifyContent: 'center'
   },
@@ -29,21 +30,15 @@ export const style = StyleSheet.create({
     backgroundColor: "white",
     paddingTop: 14,
     paddingBottom: 14,
-    marginLeft: 50,
+    marginLeft: 40,
     marginTop: 30,
     textAlign: "center",
-  },
-  titulo: {
-    marginLeft: 120,
-    color: "#FF8C00",
-    marginTop: 30,
-    fontSize: 30
   },
   textButtonCalculator: {
     paddingTop: 15,
     paddingBottom: 20,
     marginTop: 30,
-    marginLeft: 140,
+    marginLeft: 125,
     backgroundColor: "#FF8C00",
     width: 150,
     borderRadius: 30,
